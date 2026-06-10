@@ -11,6 +11,8 @@ Additionally to the CPM-FEM model, the modules `colsons.py` and `crossleys.py` p
 
 The directory "Sensitivity Analysis" contains the Python scripts for performing the sensitivity analysis of the given models and plotting the resulting sensitivity indices.
 
+In "Naive Fits" the Python scripts for the naive data fit can be found.
+
 Finally, the files in the "Profile Likelihood" folder contain the MATLAB scripts for plotting the results of the parameter identifiability analysis based on Rebecca Crossley's PDE model cited above as well as all plots considered for the analysis. Running the script `create_plots_template.m` in the "Plots" subfolder creates plots for a single profiled parameter component with various different settings, whereas running the script `create_plots_select.m` creates plots for all parameter components with fixed settings. The save directory of the plots should be manually adjusted when running the scripts locally. The settings considered as well as the parameters to be profiled can also be adjusted manually.
 
 You can find my contact details at https://www.math.cit.tum.de/math/personen/wissenschaftliches-personal/hofmann-veronika/.
