@@ -20,7 +20,7 @@ Finally, the files in the "Profile Likelihood" folder contain the MATLAB scripts
 | `K_i`                                     |          `21`, `51` | Number of interpolation points used.                                                                                     |
 | `T`                                       |        `100`, `200` | Final temporal extent of the observation domain. Analyses include graphs for  `T/4`,`T/2`,`3T/4`,`T`. |
 | `evaluation_amount_x` (`Nx`)              |          `25`, `50` | Number of spatial evaluation points.                                                                                                                     |
-| `evaluation_amount_t_per_interval` (`Nt`) | `4`, `8`, `8`, `16` | Number of temporal evaluation points per interval, computed as `j × base_resolution`. Thus, for `T=100`, `Nt ∈ {4, 8}`, and for `T=200`, `Nt ∈ {8, 16}`. |
+| `evaluation_amount_t_per_interval` (`Nt`) | `4`, `8`, `8`, `16` | Number of temporal evaluation points per interval based on the final time `T`. Thus, for `T=100`, `Nt ∈ {4, 8}`, and for `T=200`, `Nt ∈ {8, 16}`. |
 
 
 
