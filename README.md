@@ -13,6 +13,15 @@ The directory "Sensitivity Analysis" contains the Python scripts for performing 
 
 In "Naive Fits" the Python scripts for the naive data fit can be found.
 
-Finally, the files in the "Profile Likelihood" folder contain the MATLAB scripts for plotting the results of the parameter identifiability analysis based on Rebecca Crossley's PDE model cited above as well as all plots considered for the analysis. Running the script `create_plots_template.m` in the "Plots" subfolder creates plots for a single profiled parameter component with various different settings, whereas running the script `create_plots_select.m` creates plots for all parameter components with fixed settings. The save directory of the plots should be manually adjusted when running the scripts locally. The settings considered as well as the parameters to be profiled can also be adjusted manually.
+Finally, the files in the "Profile Likelihood" folder contain the MATLAB scripts for plotting the results of the parameter identifiability analysis based on Rebecca Crossley's and Chloé Colson's PDE models cited above as well as all data and plots considered for the analysis. Running the script `create_data.m` in the respective "New Plots" subfolder creates .mat files containing the data for the profile likelihood analyses with various different settings, whereas running the script `plot_data.m` creates plots using the generated data for all parameter components with the respective settings stored by the .mat files. The settings considered as well as the parameters to be profiled can also be adjusted manually. The hyperparameters used in our analyses are set as follows:
+
+| Hyperparameter                            |              Values | Description                                                                                                                                              |
+| ----------------------------------------- | ------------------: | -------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `K_i`                                     |          `21`, `51` | Number of interpolation points used.                                                                                     |
+| `T`                                       |        `100`, `200` | Final temporal extent of the observation domain. Analyses include graphs for  `T/4`,`T/2`,`3T/4`,`T`. |
+| `evaluation_amount_x` (`Nx`)              |          `25`, `50` | Number of spatial evaluation points.                                                                                                                     |
+| `evaluation_amount_t_per_interval` (`Nt`) | `4`, `8`, `8`, `16` | Number of temporal evaluation points per interval, computed as `j × base_resolution`. Thus, for `T=100`, `Nt ∈ {4, 8}`, and for `T=200`, `Nt ∈ {8, 16}`. |
+
+
 
 You can find my contact details at https://www.math.cit.tum.de/math/personen/wissenschaftliches-personal/hofmann-veronika/.
